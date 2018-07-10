@@ -202,7 +202,9 @@
     "test:unit:watch": "NODE_ENV=jesttest BABEL_DISABLE_CACHE=1 jest --no-cache --testPathIgnorePatterns /tests/ --watch",
     "test:integration": "NODE_ENV=jesttest BABEL_DISABLE_CACHE=1 jest --no-cache /tests/",
     "test:integration:watch": "NODE_ENV=jesttest BABEL_DISABLE_CACHE=1 jest --no-cache --watch /tests/",
-    "docs": "jsdoc . --configure .reaction/jsdoc/jsdoc.json --readme .reaction/jsdoc/templates/static/README.md"
+    "docs": "jsdoc . --configure .reaction/jsdoc/jsdoc.json --readme .reaction/jsdoc/templates/static/README.md",
+    "build":"reaction reset -y",
+    "start": "reaction"
   },
   "babel": {
     "plugins": [
